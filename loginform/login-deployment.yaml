@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: login-form
-        image: 
+        image: mohammadaszadali/loginform:latest
         ports:
         - containerPort: 80
