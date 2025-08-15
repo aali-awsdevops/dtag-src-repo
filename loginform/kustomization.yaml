@@ -1,0 +1,4 @@
+resources:
+  - login-deployment.yaml
+  - login-service.yaml
+  - login-ingress.yaml

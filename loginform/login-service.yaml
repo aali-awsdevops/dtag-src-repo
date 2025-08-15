@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: login-form
+  namespace: dtag-dev
+spec:
+  type: ClusterIP
+  selector:
+    app: login-form
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
