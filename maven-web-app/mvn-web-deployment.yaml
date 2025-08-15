@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: login-form
+  namespace: dtag-dev
+  labels:
+    app: login-form
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: login-form
+  template:
+    metadata:
+      labels:
+        app: login-form
+    spec:
+      containers:
+      - name: login-form
+        image: mohammadaszadali/loginform:latest
+        ports:
+        - containerPort: 80

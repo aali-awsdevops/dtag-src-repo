@@ -1,0 +1,4 @@
+resources:
+  - mvn-web-deployment.yaml
+  - mvn-web-svc.yaml
+  - mvn-web-ingress.yaml
